@@ -1,0 +1,128 @@
+@font-face{
+  font-family: 'Dancing Script';
+  src: url(../fuentes/DancingScript-Regular.ttf);
+}
+
+body {
+  background-color: black;
+  font-family: 'Dancing Script';
+}
+
+header {
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  display: flex;
+  flex-direction: row;
+  text-shadow: 2px 2px #02010a;
+  text-align: center;
+}
+
+.titulo, .menu h2 a {
+  color: white;
+}
+
+.menu {
+  word-spacing: 20px;
+}
+
+.menu h2 a[href$='#'] {
+  text-decoration: none;
+}
+
+section {
+  background-color: #d5c75f;
+  display: flex;
+  flex-direction: row;
+}
+
+section div {
+  width: 33.33%;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+section img {
+  display:block;
+  margin: auto;
+  width: 70%;
+  border: 1px solid black;
+  box-shadow: 2px 2px #02010a;
+}
+
+footer {
+  background-color: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  flex-direction: row;
+  text-align: center;
+}
+
+header, footer, section {
+  display: -webkit-flex;
+  display: flex;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+/*Para Moviles*/
+@media (max-width: 900px) {
+  header, section, footer, section div, footer div, header div {
+    width: 100%;
+  }
+  .contenido {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*Para Desktop*/
+@media (min-width: 900px) {
+  header, section, footer {
+    width: 900px;
+  }
+  header div {
+    width: 50%;
+  }
+  footer div {
+    width: 25%;
+  }
+  .contenido {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* EFECTOS A IMAGENES */
+.imagen1 {
+  -webkit-filter: blur(10px); /* Safari */
+  filter: blur(10px);
+}
+
+.imagen3 {
+  -webkit-filter: sepia(90%); /* Safari */
+  filter: sepia(90%);
+}
+
+.imagen2, .imagen4, .imagen6 {
+  -webkit-filter: grayscale(100%); /* Safari */
+  filter: grayscale(100%);
+}
+
+@keyframes deslizar {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+.contenido {
+  animation: deslizar 1s;
+}

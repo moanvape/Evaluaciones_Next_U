@@ -1,0 +1,172 @@
+@font-face{
+  font-family: 'Dancing Script';
+  src: url(../fuentes/DancingScript-Regular.ttf);
+}
+
+body {
+  background-color: black;
+  font-family: 'Dancing Script';
+}
+
+header {
+  background-color: #5b7989;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+  text-shadow: 2px 2px #02010a;
+  text-align: center;
+
+}
+
+.titulo, .menu h2 a {
+  color: white;
+}
+
+.menu {
+  word-spacing: 20px;
+}
+
+.menu h2 a[href$='#'] {
+  text-decoration: none;
+}
+
+#seccion1 {
+  background-color: #82c3a6;
+}
+
+#seccion2 {
+  background-color: #d5c75f;
+}
+/* FALTA DAR CENTRADO VERTICAL A LAS IMAGENES */
+.imagen1 img, .imagen2 img, .imagen3 img {
+  display:block;
+  margin: auto;
+  width: 70%;
+  align-items: center;
+  border: 2px solid black;
+  box-shadow: 2px 2px #02010a;
+}
+
+figcaption {
+  text-align: center;
+}
+
+#seccion1 div {
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+#seccion2 div {
+  padding-top: 3%;
+  padding-bottom: 3%;
+  width: 25%;
+}
+
+footer {
+  background-color: #C6d5c5;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  text-align: center;
+}
+
+header, footer, #seccion2 {
+  display: -webkit-flex;
+  display: flex;
+  flex-direction: row;
+  -webkit-flex-flow: row wrap;
+  flex-flow: row wrap;
+}
+
+/*Para Moviles*/
+@media (max-width: 900px) {
+  header, section, footer, footer div, header div, #seccion2 div {
+    width: 100%;
+  }
+  .contenido {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/*Para Desktop*/
+@media (min-width: 900px) {
+  header, section, footer {
+    width: 900px;
+  }
+  header div {
+    width: 50%;
+  }
+  #seccion1 div {
+    width: 100%;
+  }
+  #seccion2 div {
+    width: 50%;
+  }
+  footer div {
+    width: 25%;
+  }
+  .contenido {
+    width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+/* EFECTOS EN IMAGENES */
+.imagen2 img {
+  transform: rotate(0deg);
+  -webkit-transform: rotate(0deg);
+  -moz-transform: rotate(0deg);
+  -o-transform: rotate(0deg);
+  -ms-transform: rotate(0deg);
+  -webkit-transition: all 0.5s ease-in-out;
+  -moz-transition: all 0.5s ease-in-out;
+  -ms-transition: all 0.5s ease-in-out;
+  -o-transition: all 0.5s ease-in-out;
+}
+.imagen2 img:hover {
+  transform: rotate(10deg);
+  -webkit-transform: rotate(10deg);
+  -moz-transform: rotate(10deg);
+  -o-transform: rotate(10deg);
+  -ms-transform: rotate(10deg);
+  border: 2px solid black;
+  box-shadow: 2px 2px #82c3a6;
+}
+
+.imagen3 img {
+  transform: translate(0px);
+  -webkit-transform: translate(0px);
+  -moz-transform: translate(0px);
+  -o-transform: translate(0px);
+  -ms-transform: translate(0px);
+  -webkit-transition: all 0.4s ease-in-out;
+  -moz-transition: all 0.4s ease-in-out;
+  -ms-transition: all 0.4s ease-in-out;
+  -o-transition: all 0.4s ease-in-out;
+}
+.imagen3 img:hover {
+  transform: translate(20px, -5px);
+  -webkit-transform: translate(20px, -5px);
+  -moz-transform: translate(20px, -5px);
+  -o-transform: translate(20px, -5px);
+  -ms-transform: translate(20px, -5px);
+  border: 2px solid black;
+  box-shadow: 2px 2px #82c3a6;
+}
+
+@keyframes deslizar {
+  0% {
+    margin-top: 150%;
+  }
+  60% {
+    margin-top: -5%;
+  }
+  100% {
+    margin-top: 0%;
+  }
+}
+
+.contenido {
+  animation: deslizar 1s;
+}
