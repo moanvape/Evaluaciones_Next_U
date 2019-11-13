@@ -1,27 +1,53 @@
 /* * {
-  border: 0.05px solid black;
+  border: 0.05px solid grey;
 } */
 
 body {
   background: url("../img/tierra.jpg") no-repeat fixed;
   background-size: cover;
-  background-position-y: 10rem;
+  background-position-y: 12rem;
   background-color: #01579b;
 }
 
-.margen {
-  margin: 0px;
-}
-
 .logo {
-  border-radius: 20px;
-  float: right;
+  border-radius: 10px;
   vertical-align: bottom;
-  width: 200px;
-  height: 200px;
-  margin-top: 5%;
+  float: right;
+  width: 90%;
+  margin-top: 10%;
+  border: 1px solid black;
 }
 
-.cont-logo {
-  min-height: 15rem;
+.contenedor-menu {
+  margin-top: 1rem;
+}
+
+.contenedor-slogan {
+  margin-top: 3rem;
+}
+
+h3 {
+  color: white;
+  text-shadow: 2px 2px #9e9e9e;
+  text-align: left;
+}
+
+.iconos-redes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  color:#b2ff59;
+  padding-top: 0.4em;
+}
+
+.galeria {height: 1080px;}
+.galeria1, .galeria5 {height: 40%;}
+.galeria2, .galeria4 {height: 60%;}
+.galeria3 {height: 100%;}
+
+.img-galeria {
+  border: 1px solid white;
+  border-radius: 10px;
+  width: 100%;
 }
