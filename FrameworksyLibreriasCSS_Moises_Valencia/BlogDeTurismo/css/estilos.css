@@ -1,0 +1,27 @@
+/* * {
+  border: 0.05px solid black;
+} */
+
+body {
+  background: url("../img/tierra.jpg") no-repeat fixed;
+  background-size: cover;
+  background-position-y: 10rem;
+  background-color: #01579b;
+}
+
+.margen {
+  margin: 0px;
+}
+
+.logo {
+  border-radius: 20px;
+  float: right;
+  vertical-align: bottom;
+  width: 200px;
+  height: 200px;
+  margin-top: 5%;
+}
+
+.cont-logo {
+  min-height: 15rem;
+}
