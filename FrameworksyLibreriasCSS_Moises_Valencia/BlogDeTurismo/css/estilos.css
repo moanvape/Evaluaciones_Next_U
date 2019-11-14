@@ -41,7 +41,7 @@ h3 {
   padding-top: 0.4em;
 }
 
-.galeria {height: 1080px;}
+.galeria {height: 800px; margin-top: 0.6em;}
 .galeria1, .galeria5 {height: 40%;}
 .galeria2, .galeria4 {height: 60%;}
 .galeria3 {height: 100%;}
