@@ -1,0 +1,28 @@
+* {
+  border: 0.5px solid white;
+}
+
+body {
+  background: url("../img/fondo.jpg") no-repeat fixed;
+  background-size: cover;
+}
+
+.logo {
+  color: yellow;
+}
+
+.slogan {
+  color: white;
+}
+
+.header1 {
+  min-height: 120px;
+}
+
+.cuerpo {
+  min-height: 500px;
+}
+
+.img-fav {
+  width: 25%;
+}
