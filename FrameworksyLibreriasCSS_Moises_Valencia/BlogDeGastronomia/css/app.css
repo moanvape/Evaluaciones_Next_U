@@ -1,6 +1,6 @@
-* {
-  border: 0.5px solid white;
-}
+/* * {
+  border: 0.05px solid white;
+} */
 
 body {
   background: url("../img/fondo.jpg") no-repeat fixed;
@@ -20,9 +20,67 @@ body {
 }
 
 .cuerpo {
-  min-height: 500px;
+  min-height: 600px;
 }
 
 .img-fav {
   width: 25%;
+}
+
+.menu-vertical {
+  border: 1px solid black;
+  width: 100%;
+  height: 50px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+.busqueda {
+  padding-top: 3em;
+}
+
+.menu {
+  padding-top: 3em;
+}
+
+.favoritos {
+  padding-top: 3em;
+}
+
+.historial {
+  padding-top: 3em;
+}
+
+.imagenes-menu {
+  margin-left: 4px;
+  margin-right: 4px;
+  margin-top: 8px;
+  margin-bottom: 8px;
+}
+
+.color-primary {
+  background: #73C6B6;
+  margin-top: 15px;
+  border-radius: 5px;
+}
+
+.color-secundario {
+  background-color: #F7DC6F;
+  margin-top: 15px;
+  border-radius: 5px;
+  text-align: justify;
+}
+
+.alinea-img-impar {
+  display: flex;
+  justify-content: left;
+  align-items: left;
+  margin-bottom: 5px;
+}
+
+.alinea-img-par {
+  display: flex;
+  justify-content: right;
+  align-items: right;
+  margin-bottom: 5px;
 }
