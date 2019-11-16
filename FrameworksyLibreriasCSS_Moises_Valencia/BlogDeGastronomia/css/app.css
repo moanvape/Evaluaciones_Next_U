@@ -8,11 +8,7 @@ body {
 }
 
 .header1 {
-  min-height: 120px;
-}
-
-.cuerpo {
-  min-height: 600px;
+  border-bottom: 2px solid green;
 }
 
 .fondo-contenedor {
@@ -27,20 +23,8 @@ body {
   border-radius: 5px;
 }
 
-.busqueda {
+.busqueda, .menu{
   padding-top: 2em;
-}
-
-.menu {
-  padding-top: 1em;
-}
-
-.favoritos {
-  padding-top: 2em;
-}
-
-.historial {
-  padding-top: 3em;
 }
 
 .imagenes-menu {
@@ -48,16 +32,16 @@ body {
   margin-right: 4px;
   margin-top: 8px;
   margin-bottom: 8px;
-  width: 25%;
+  width: 30%;
 }
 
-.color-primary {
+.principal {
   background-color: rgba(115,198,182,0.8);
   margin-top: 15px;
   border-radius: 5px;
 }
 
-.color-secundario {
+.secundario {
   background-color: #F7DC6F;
   margin-top: 15px;
   border-radius: 5px;
