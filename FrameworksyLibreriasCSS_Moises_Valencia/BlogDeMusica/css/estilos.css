@@ -1,3 +1,28 @@
-* {
-  border: 0.05px solid red;
+/* * {
+  border: 0.05px solid white;
+} */
+
+body {
+  background: #154360;
+}
+
+.img-social {
+  width: 40px;
+  height: 40px;
+}
+
+header {
+  background: #5DADE2;
+}
+
+.contenido {
+  margin-top: 15px;
+  background: #45B39D;
+  border-radius: 10px;
+}
+
+.navbar-menu {
+  background: #F8C471;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
 }
